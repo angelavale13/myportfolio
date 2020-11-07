@@ -1,0 +1,41 @@
+body {
+	background-color: #a6ad99;
+}
+
+.doublefont {
+    position: relative;
+    color: pink;
+    font-family: rosella-solid, sans-serif;
+	font-style: normal;
+	font-weight: bolder;
+}
+.doublefont:after {
+    content: attr(content);
+    color: darkred;
+    font-family: rosella-deco, sans-serif;
+	font-style: normal;
+	font-weight: bolder;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.crop {
+    object-fit: cover;
+    height: 50vw !important;
+}
+
+.h-divider {
+    margin-top:5px;
+    margin-bottom:5px;
+    height:1px;
+    width:100%;
+    border-top:1px solid gray;
+}
+
+@media only screen and (min-width: 1441px){
+    .crop {
+        object-fit: cover;
+        height: 25vw !important;
+    }
+}
