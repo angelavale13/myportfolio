@@ -1,3 +1,9 @@
+h2, h3 {
+    font-family: rosella-deco, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 body {
 	background-color: #a6ad99;
 }
