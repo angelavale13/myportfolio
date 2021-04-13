@@ -1,0 +1,106 @@
+{
+    "basics": {
+      "name": "Angela Valenzuela",
+      "label": "Bilingual Web Developer & Designer",
+      "email": "angela.v13@outlook.com",
+      "phone": "(480) 309-4840",
+      "website": "angelav13.myportfolio.com",
+      "summary": "Bilingual web developer and designer with multicultural worldview of technology and advocate of accessible web design.",
+      "profiles": [{
+        "network": "Behance",
+        "url": "https://www.behance.net/angelavalenzu3"
+      }]
+    },
+    "work 1": [{
+      "company": "State Farm Insurance",
+      "position": "Bilingual Customer Service",
+      "startDate": "2018-02-12",
+      "endDate": "current",
+      "summary": "Manage English and Spanish inbound calls from clients, dealerships, banks, and other departments. Lead meetings with department messages and training. Assist with policies, payments and troubleshoot app login.",
+    }],
+    "work 2": [{
+        "company": "Arizona State University",
+        "position": "Assistant Grader",
+        "startDate": "2020-10-01",
+        "endDate": "2020-12-20",
+        "summary": "Assist Faculty with grading HTML5 and CSS exercises. Review web development process through research of code, best practices and case studies.",
+      }],
+    "work 3": [{
+    "company": "Arizona State University",
+    "position": "Faculty Assistant",
+    "startDate": "2020-05-01",
+    "endDate": "2020-06-30",
+    "summary": "Track student participation. Act as source of knowledge for students based on past coursework experience. Review UX practices such as personas, heuristic checklists and website design.",
+    }],
+    "work 4": [{
+    "company": "Arizona State University",
+    "position": "Faculty Assistant",
+    "startDate": "2020-05-01",
+    "endDate": "2020-06-30",
+    "summary": "Track student participation. Act as source of knowledge for students based on past coursework experience. Review UX practices such as personas, heuristic checklists and website design.",
+    }],
+    "work 5": [{
+    "company": "Banner Children's Specialists",
+    "position": "Administrative Coordinator",
+    "startDate": "2014-08-01",
+    "endDate": "2018-12-30",
+    "summary": "Leadership role in which I manage Pediatric Endocrinology office and assist with Doctor interviews and proposals for hire. Work with a small team to start and manage a Fetal Care Program involving multiple hospital specialties.",
+    }],
+    "education 1": [{
+      "institution": "Arizona State University",
+      "area": "Web Development",
+      "studyType": "Bachelor in Applied Science"
+    }],
+    "education 2": [{
+        "institution": "Mesa Community College",
+        "area": "Web Development",
+        "studyType": "Associate in Applied Science"
+      }],
+    "skills": [{
+      "name 1": "Software and Languages",
+      "keywords 1": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Visual Studio Code",
+        "Bootstrap",
+        "Balsamiq",
+        "Adobe XD",
+        "Github",
+        "Photoshop",
+        "InDesign",
+        "Illustrator",
+      ],
+      "name 2": "Communication",
+      "keywords 2": [
+        "Zoom",
+        "Slack",
+        "Skype",
+        "Discord"
+      ]
+    }],
+    "languages": [{
+      "language": "Spanish",
+      "fluency": "fluent"
+    }],
+    "awards": [{
+        "title": "Outstanding Web Design and Development",
+        "date": "2020-12-30",
+        "awarder": "GIT Awards"
+      }],
+    "activities": [{
+      "name": "Member of AIGA Student and Phoenix chapter",
+      "keywords": [
+        "Participate in Design Challenges"
+      ]
+    }],
+    "references": [{
+      "name 1": "Sofia Vega",
+      "reference 1": "Manager at Banner Children's Specialists",
+      "contact 1": "ar.ms@me.com",
+      "name 2": "Alonzo Mora",
+      "reference 2": "Supervisor at State Farm Insurance",
+      "contact 2": "alonzo.mora.dn9d@statefarm.com"
+    }]
+  }
