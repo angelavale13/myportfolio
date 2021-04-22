@@ -67,7 +67,7 @@ function topFunction() {
 //RESUME PAGE
 
 //get json from mock server and add to html
-$.get("https://baf2fcde-bca5-4a71-a7bc-d8d1c39e3842.mock.pstmn.io/resume.json", function(data){
+$.get("https://fdd8f27c-123e-4ce6-aed5-0de7ff984627.mock.pstmn.io/resume", function(data){
   
   // Profile and Contact Info
   $("#column1").append("<section id='basicsSection'></section>");
