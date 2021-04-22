@@ -1,3 +1,4 @@
+"use strict";
 
 //HOME AREA
 $( document ).ready(function() {
@@ -17,6 +18,7 @@ function storeUserName(){
 };
 
 function clearUserName(){
+  //if user input in localstorage: get it, remove it and then prompt user input and hide personalized message.
   if(localStorage !== null){
     if(localStorage.getItem("greeting")){
       localStorage.removeItem("greeting");
@@ -26,7 +28,7 @@ function clearUserName(){
   $("#personalGreeting").hide();
 };
 
-//load data from storage and update screen accordingly
+//load data from local storage and update screen accordingly
 function displayUserName(){
   let localUser = localStorage.getItem("greeting");
   if(localStorage.getItem("greeting")){
@@ -39,13 +41,15 @@ function displayUserName(){
 
 
 
-//WORK AREA
+//WORK PAGE
+//activate accordion
 $( function() {
   $( "#accordion" ).accordion({
     animate: 200,
     collapsible:true,
     active:false
   });
+  //force click so that clicking on the picture on the home page will find the anchor on the work details accordion.
   $(location.hash).trigger("click");
 });
 
@@ -60,10 +64,12 @@ function topFunction() {
 
 
 
-//RESUME AREA
+//RESUME PAGE
+
+//get json from mock server and add to html
 $.get("https://baf2fcde-bca5-4a71-a7bc-d8d1c39e3842.mock.pstmn.io/resume.json", function(data){
   
-  // Section Basics
+  // Profile and Contact Info
   $("#column1").append("<section id='basicsSection'></section>");
   $("#basicsSection").append(
     build("Profile &amp; Contact","h2")+"<br />"+
@@ -79,6 +85,8 @@ $.get("https://baf2fcde-bca5-4a71-a7bc-d8d1c39e3842.mock.pstmn.io/resume.json", 
         build(data.basics.profiles[i].url,"p")
       );
     };
+
+  //Work Experience
   $("#column1").append("<section id='workSection'></section>");
   $("#workSection").append(
     build("Work", "h2")
@@ -92,6 +100,8 @@ $.get("https://baf2fcde-bca5-4a71-a7bc-d8d1c39e3842.mock.pstmn.io/resume.json", 
       build(data.work[i].summary, "p")
     );
   };
+
+  //Education
   $("#column2").append("<section id='eduSection'></section>");
   $("#eduSection").append(
     build("Education", "h2")
@@ -103,6 +113,8 @@ $.get("https://baf2fcde-bca5-4a71-a7bc-d8d1c39e3842.mock.pstmn.io/resume.json", 
       build(data.education[i].studyType, "p")
     );
   };
+
+  //Skills
   $("#column2").append("<section id='skillsSection'></section>");
   $("#skillsSection").append(
     build("Skills","h2")+"<br />"
@@ -113,6 +125,8 @@ $.get("https://baf2fcde-bca5-4a71-a7bc-d8d1c39e3842.mock.pstmn.io/resume.json", 
       build(data.skills[i].keywords, "p")
     );
   };
+
+  //Activities
   $("#column2").append("<section id='activitiesSection'></section>");
   $("#activitiesSection").append(
     build("Activities", "h2")
@@ -126,11 +140,13 @@ $.get("https://baf2fcde-bca5-4a71-a7bc-d8d1c39e3842.mock.pstmn.io/resume.json", 
   
 
 
-
+//Error message if issue with mock server
 }, "json").fail(function(jqXHR){
   $("#resume").append("<section>There was an error while trying to contact the server</section>");
 });
 
+
+//Makes it easier to concatenate html tags to JSON
 function build(content, tag){
   return "<"+tag+">"+content+"</"+tag+">";
 }
