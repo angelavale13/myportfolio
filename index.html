@@ -5,134 +5,78 @@
 		<!-- Required meta tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Adobe Fonts -->
-        <link rel="stylesheet" href="https://use.typekit.net/gtm7ueb.css">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="styles.css">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-		<!-- jQuery Carousel -->
-		<script type="text/javascript" src="jcarousel-master/dist/jquery.jcarousel-core.min.js"></script>
-		<script type="text/javascript" src="jcarousel-master/dist/jquery.jcarousel.min.js"></script>
-		<script type="text/javascript" src="jcarousel-master/dist/jquery.jcarousel-control.min.js"></script>
-		<script type="text/javascript" src="jquery.js"></script>
+		
+        <!-- CSS -->
+		<link rel="stylesheet" href="styles/jcarousel.basic.css">
+		<link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.css">
+		<link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+		<link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+		<link rel="stylesheet" href="https://use.typekit.net/xcs2eky.css">
+		<link rel="stylesheet" href="styles/styles.css">
+		
+		<!-- Scripts-->
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery-3.6.0.min.js"></script>
+		<script src="scripts/jquery.jcarousel-core.min.js"></script>
+		<script src="scripts/jquery.jcarousel.min.js"></script>
+		<script src="scripts/jcarousel.basic.js"></script>
+		<script src="scripts/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<script src="scripts/script.js"></script>
 	</head>
 	<body>
 		<header>
+			<h1>Angela Valenzuela</h1>
 			<nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>|</li>
-                        <li><a href="about.html">About</a></li>
-                        <li>|</li>
-						<li><a href="work-details.html">About</a></li>
-						
-                        <li>|</li>
-                        <li"><a href="resume.html">Resume</a></li>
-                    </ul>
-                </div>
-            </nav>
-			<div class="pt-5"></div>
-			<div class="pt-2"></div>
-			<div class="row justify-content-center justify-content-lg-start ml-lg-5">
-				<img class="img-fluid col-6 col-md-3 col-lg-2" src="media/logo.png">
-            </div>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="work-details.html">WORK</a></li>
+					<li><a href="resume.html">RESUME</a></li>
+				</ul>
+			</nav>
 		</header>
-		<div class="h-divider pb-2"></div>
-		<div class="d-flex p-2 justify-content-center justify-content-lg-start">
-			<h2>About</h2>
-		</div>
-		<div class="row">
-			<section class="col-md-5 col-lg-3 text-center">
-				<figure class="figure">
-					<img src="./media/angela_mugshot.jpg" class="figure-img img-fluid" alt="Picture of Angela's face">
-				</figure>
-			</section>
-			<section class="col">
-				<h2>Bilingual web developer & designer</h2>
-				<p>An Arizona native who communicates in English, daydreams in Spanish and lives in code.</p>
-			</section>
-			<div class="h-divider"></div>
-			<div class="col-12 d-flex p-2 justify-content-center justify-content-lg-start">
-				<h2>Work</h2>
-			</div>
+		<main>
+			<section id="introSection">
+				<h6>This is the container for user input and submit button</h6>
+				<!--Form to collect user name-->
+				<form id="nameInput">
+					<label for="greeting">Welcome! What's your name?</label>
+					<input type="text" name="greeting" id="greeting">
+					<input type="button" id="submitBtn" value="Submit">
+				</form>
+				
+				<section id="personalGreeting">
+					<h6>This is the container for personalized greeting result and update button</h6>
+					
+					<section class="inlineSection">
+						<h6>This is where the personalized greeting goes</h6>
+					</section>
+					<input type='button' id='resetBtn' value='Not You?'>
+				</section>
 			
-			<!--Slideshow here-->
-			<article class="jcarousel-wrapper">
-				<section class="jcarousel">
-					<figure class="jcarousel-list">
-						<img src="./media/AfterLastFm.png" class="jcarousel-item" alt="After of LastFM Project">
-						<img src="./media/bPHome.png" class="jcarousel-item" alt="Homepage of BubblePup Project">
-						<img src="./media/AfterLastFm.png" class="jcarousel-item" alt="After of LastFM Project">
-						<img src="./media/bPHome.png" class="jcarousel-item" alt="Homepage of BubblePup Project">
-					</figure>
-				</section>
-				<a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
-				<a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">></a>
-			</article>
-
-			<section class="col-12 col-lg-4 text-center">
-				<a href="work-details.html#lastfm">
-					<figure class="figure">
-						<img src="./media/AfterLastFm.png" class="figure-img img-fluid" alt="After of LastFM Project">
-						<figcaption class="figure-caption text-center">Last.fm: Usability Testing</figcaption>
-					</figure>
-				</a>
+				<h3>I am a bilingual web developer & designer</h3>
+				<h4>An Arizona native who communicates in English, daydreams in Spanish and lives in code.</h4>
 			</section>
-
-			<section class="col-12 col-lg-4 text-center">
-				<a href="work-details.html#bubblepup">
-					<figure class="figure">
-						<img src="./media/bPHome.png" class="figure-img img-fluid" alt="Homepage of BubblePup Project">
-						<figcaption class="figure-caption text-center">BubblePup Boba Tea & Treats: Web Design and Development</figcaption>
-					</figure>
-				</a>
+			
+			<!--Carousel-->
+			<section>
+				<h3 class="featured">Featured Projects</h3>
+				<div class="wrapper">
+					<div class="jcarousel-wrapper">
+						<div class="jcarousel">
+							<ul>
+								<li><a href="work-details.html#lastfm"><img src="media/AfterLastFm.png" width="800" height="500" alt="Picture of last.fm website for usability project"></a></li>
+								<li><a href="work-details.html#bubblepup"><img src="media/bPHome.png" width="800" height="500" alt="Picture of Bubble Pup Boba Tea Shop for web design and development project"></a></li>
+								<li><a href="work-details.html#spacejam"><img src="media/spaceJamD.png" width="800" height="500" alt="Picture of Two Trees Creative Agency for web development project"></a></li>
+							</ul>
+						</div>
+						<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+						<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+					</div>
+					<p class="jcarousel-pagination"></p>
+				</div>
 			</section>
-
-			<section class="col-12 col-lg-4 text-center">
-				<a href="work-details.html#spacejam">
-					<figure class="figure">
-						<img src="./media/spaceJamD.png" class="figure-img img-fluid" alt="Space Jam Quiz Prototype">
-						<figcaption class="figure-caption text-center">Space Jam: App Quiz Prototype</figcaption>
-					</figure>
-				</a>
-			</section>
-
-			<section class="col-12 col-lg-4 text-center">
-				<a href="work-details.html#twotrees">
-					<figure class="figure">
-						<img src="./media/twoTrees.png" class="figure-img img-fluid" alt="Two Trees Creative Agency Web Site">
-						<figcaption class="figure-caption text-center">Two Trees Creative Agency: Web Development</figcaption>
-					</figure>
-				</a>
-			</section>
-
-			<section class="col-12 col-lg-4 text-center">
-				<a href="work-details.html#catplinko">
-					<figure class="figure">
-						<img src="./media/catPlinko.png" class="figure-img img-fluid" alt="Cat Plinko">
-						<figcaption class="figure-caption text-center">Cat Plinko: Web Development</figcaption>
-					</figure>
-				</a>
-			</section>
-
-			<div class="h-divider"></div>
-
-			<div class="col-12 d-flex p-2 justify-content-center justify-content-lg-start">
-				<h2>Contact</h2>
-			</div>
-
-			<div class="col-md-12 justify-content-center text-center">
-				<section class="p-4 border-dark border shadow text-center">
-					<a href="#">angela@email.com</a>
-				</section>
-			</div>
-		</div>
-
-
+		</main>
+		
 	</body>
-	<footer>Copyright&copy;2020 Angela Valenzuela</footer>
+	<footer class="footer"><p>Copyright&copy;2021 Angela Valenzuela</p></footer>
 </html>

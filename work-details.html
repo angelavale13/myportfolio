@@ -5,113 +5,88 @@
 		<!-- Required meta tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Adobe Fonts -->
-        <link rel="stylesheet" href="https://use.typekit.net/gtm7ueb.css">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="styles.css">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		
+        <!-- CSS -->
+		<link rel="stylesheet" href="styles/jcarousel.basic.css">
+		<link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.css">
+		<link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+		<link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+		<link rel="stylesheet" href="https://use.typekit.net/xcs2eky.css">
+		<link rel="stylesheet" href="styles/styles.css">
+		
+		<!-- Scripts-->
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery-3.6.0.min.js"></script>
+		<script src="scripts/jquery.jcarousel-core.min.js"></script>
+		<script src="scripts/jquery.jcarousel.min.js"></script>
+		<script src="scripts/jcarousel.basic.js"></script>
+		<script src="scripts/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<script src="scripts/script.js"></script>
 	</head>
-	<body class="container ml-lg-5">
+	<body>
 		<header>
-			<nav class ="navbar fixed-top navbar-expand-lg navbar-light bg-white py-0">
-                <a class ="navbar-brand" href ="#">Angela Valenzuela</a>
-                <button class ="navbar-toggler" type ="button" data-toggle ="collapse" data-target ="#colNav">
-                    <span class ="navbar-toggler-icon"></span>
-                </button>
-                <div class ="collapse navbar-collapse" id ="colNav">
-                    <ul class ="navbar-nav">
-                        <li class="nav-item pt-1"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-link d-none d-lg-block pt-2">|</li>
-                        <li class="nav-item pt-1"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-link d-none d-lg-block pt-2">|</li>
-						<!-- <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li> -->
-						<li class="nav-item dropdown pt-1">
-							<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Work</a>
-							<div class="dropdown-menu">
-							  <a class="dropdown-item" href="work-details.html#lastfm">Last.fm</a>
-							  <a class="dropdown-item" href="work-details.html#bubblepup">BubblePup</a>
-							  <a class="dropdown-item" href="work-details.html#spacejam">SpaceJam</a>
-							  <a class="dropdown-item" href="work-details.html#twotrees">Two Trees Creative Agency</a>
-							  <a class="dropdown-item" href="work-details.html#catplinko">Cat Plinko</a>
-							</div>
-						  </li>
-                        <li class="nav-link d-none d-lg-block pt-2">|</li>
-                        <li class="nav-item pt-1"><a class="nav-link" href="resume.html">Resume</a></li>
-                    </ul>
-                </div>
-            </nav>
-			<div class="pt-5"></div>
-			<div class="pt-2"></div>
-			<div class="row d-none d-lg-block">
-				<img class="col col-lg-2" src="media/logo.png">
-            </div>
+			<h1>Angela Valenzuela</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="work-details.html">WORK</a></li>
+					<li><a href="resume.html">RESUME</a></li>
+				</ul>
+			</nav>
 		</header>
-		<div class="h-divider pb-2"></div>
-		<div class="d-flex p-2 justify-content-center">
-			<h1>Work</h1>
-		</div>
-		<div class="row">
-			<section id="lastfm" class="col-12">
-				<h2>Last.fm</h2>
-				<h3>Usability Testing</h3>
-				<img src="./media/BeforeLastFm.png" class="img-fluid mb-3" alt="Original Last.fm desktop mockup">
-				<img src="./media/AfterLastFm.png" class="img-fluid mb-3" alt="Refined Last.fm desktop mockup">
-				<p>Last.fm is a music information website that allows users to dive into their listening history, discover new artists through recommendations, and share their experience with like-minded individuals.</p>
-				<p>Based on preliminary research, our goal was to test website navigation, review content credibility and define the brand identity through consistent layout design. Observation-based testing was the most effective way to investigate how users interacted with Last.fm and included: Persona building, Heuristic checklists and restructering content.</p>
-				<p>In order to reinforce the purpse of Last.fm, our team recommended home page updates and defining quirky words like "scrobble". By establishing a cross-platform authentication of content, users can feel more confident in the source of music information.</p>
-				<p>While the surface testing was useful, the results of our usability tests showed that more opportunities lie under the premium subscription-based membership that Last.fm offers.</p>
-			</section>
-			<div class="h-divider"></div>
-			<section id="bubblepup" class="col-12">
-				<h2>Boba Tea &amp; Treats</h2>
-				<h3>Web Design &amp; Development</h3>
-				<div class="text-center">
-					<img src="./media/bubblePupHome.png" class="img-fluid mb-3 crop" alt="Pupple Pup Cafe mobile mockup">
-					<img src="./media/bubblePupEvents.png" class="img-fluid mb-3 crop" alt="Pupple Pup Cafe mobile mockup">
-					<img src="./media/bubblePupMenu.png" class="img-fluid mb-3 crop" alt="Pupple Pup Cafe mobile mockup">
-				</div>
-				<img src="./media/bPHome.png" class="img-fluid mb-3" alt="Pupple Pup Cafe desktop mockup">
-				<p>Bubble Pup is a cute boba cafe where both owners and pets can enjoy a nice treat. Our team was tasked with designing a responsive website based on the pastel vibes of the cafe.</p>
-				<p>The site's content had to be addressed with the client first in order to successfully design a layout for mobile, tablet and desktop versions. Providing a checklist to determine which information should be included in the website really helped narrow the docus on crucial feedback. Based on this information, we decided that the most important categories on the website were social media, menu, and contact information.</p>
-				<p>To ensure that the website was accessible, the layout designs were kept simple and images were marked up for screen readers. The website showcased photos from cafe visitors as well as any pertinent contact and product information.</p>
-			</section>
-			<div class="h-divider"></div>
-			<section id="spacejam" class="col-12">
-				<h2>Space Jam</h2>
-				<h3>App Quiz Prototype</h3>
-				<h4>View live prototype <a href="https://xd.adobe.com/embed/cbd28319-88e3-4dd4-56ba-94868ae4be95-bde3/?fullscreen">here</a></h4>
-				<div class="text-center">
-					<img src="./media/spaceJam.png" class="img-fluid mb-3 crop" alt="Space Jam Movie Quiz mobile mockup">
-					<img src="./media/spaceBall.png" class="img-fluid mb-3 crop" alt="Space Jam Movie Quiz mobile mockup">
-					<img src="./media/spaceNav.png" class="img-fluid mb-3 crop" alt="Space Jam Movie Quiz mobile mockup">
-				</div>
-				<img src="./media/spaceJamD.png" class="img-fluid mb-3" alt="Space Jam Movie Quiz mobile mockup">
-				<p>Discovering techniques to give users feedback and visual cues can be done by mocking up the client's idea. This project aimed to demonstrate the usefulness of a prototype in the web design & development workflow process. As an avid fan of the movie Space Jam, I created a quiz that showcased how a user might walk through the workflow of a quiz application.</p>
-				<p>Above is the interactive prototype. At the time of the original website's creation, designing for mobile didn't exist so it was interesting to compare just how far web design has come. Today, understanding user experience fundamentals is important in any product development.</p>
-			</section>
-			<div class="h-divider"></div>
-			<section id="twotrees" class="col-12">
-				<h2>Two Trees Creative Agency</h2>
-				<h3>Web Development</h3>
-				<img src="./media/twoTrees.png" class="img-fluid mb-3" alt="Two Trees Website desktop mockup">
-				<p>With the mockup already provided, the client requested that we build the website based on the design using semantic and validated code. Most of the content or copy was provided so at this point identifying design considerations for a fixed layout was important.</p>
-				<p>While the client's expectations were met, it was recommended that their next project should focus on mobile responsive design so that users could have a better experience on their phones and on the go.</p>
-			</section>
-			<div class="h-divider"></div>
-			<section id="catplinko" class="col-12">
-				<h2>Cat Plinko</h2>
-				<h3>Web Development</h3>
-				<img src="./media/catPlinko.png" class="img-fluid mb-3" alt="Cat Plinko Game desktop mockup">
-				<h4>View live prototype <a href="https://angelavale13.github.io/BaseGame/">here</a></h4>
-				<p>Sometimes cats just want to have fun. Cat Plinko was developed as a nod to the original Plinko game with a purrfect twist.</p>
-				<p>Based on real feline behaviors, we have the user start the game as a cat and the rest is pretty predictable. See a mouse? Pounce and it's gone. Did they go near water? Watch the screen flash in alarm. It's all fun and games until the cat gets wet.</p>
-			</section>
-		</div>
-
-		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<main>
+			<h2>Work Details</h2>
+			<article id="accordion">
+				<h3 id="lastfm">Last.fm - UI/UX</h3>
+				<section>
+					<h6>Project 1</h6>
+					<p>Last.fm is a music information website that allows users to dive into their listening history, discover new artists through recommendations, and share their experience with like-minded individuals.
+					Based on preliminary research, our goal was to test website navigation, review content credibility and define the brand identity through consistent layout design. Observation-based testing was the most effective way to investigate how users interacted with Last.fm and included: Persona building, Heuristic checklists and restructering content.
+					In order to reinforce the purpse of Last.fm, our team recommended home page updates and defining quirky words like "scrobble". By establishing a cross-platform authentication of content, users can feel more confident in the source of music information.
+					While the surface testing was useful, the results of our usability tests showed that more opportunities lie under the premium subscription-based membership that Last.fm offers.</p>
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0613.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0614.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0615.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0616.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0617.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0618.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0619.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0620.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0621.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0622.jpg" width="1300" height="800" alt="Refined Last.fm desktop mockup">
+				</section>
+				<h3 id="bubblepup">BubblePup - Web Design &amp; Development</h3>
+				<section>
+					<h6>Project 2</h6>
+					<p>Bubble Pup is a cute boba cafe where both owners and pets can enjoy a nice treat. Our team was tasked with designing a responsive website based on the pastel vibes of the cafe.</p>
+					<p>The site's content had to be addressed with the client first in order to successfully design a layout for mobile, tablet and desktop versions. Providing a checklist to determine which information should be included in the website really helped narrow the docus on crucial feedback. Based on this information, we decided that the most important categories on the website were social media, menu, and contact information.</p>
+					<p>To ensure that the website was accessible, the layout designs were kept simple and images were marked up for screen readers. The website showcased photos from cafe visitors as well as any pertinent contact and product information.</p>
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P062.jpg" width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P063.jpg" width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P064.jpg"  width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P065.jpg" width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P066.jpg" width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P067.jpg"  width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P068.jpg" width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P069.jpg" width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0610.jpg"  width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0611.jpg"  width="1300" height="800" alt="Pupple Pup Cafe mobile mockup">
+				</section>
+				<h3 id="spacejam">Space Jam - Rapid Prototyping</h3>
+				<section>
+					<h6>Project 3</h6>
+					<p>View live prototype <a href="https://xd.adobe.com/embed/cbd28319-88e3-4dd4-56ba-94868ae4be95-bde3/?fullscreen">here</a></p>
+					<p>Discovering techniques to give users feedback and visual cues can be done by mocking up the client's idea. This project aimed to demonstrate the usefulness of a prototype in the web design & development workflow process. As an avid fan of the movie Space Jam, I created a quiz that showcased how a user might walk through the workflow of a quiz application.</p>
+					<p>Above is the interactive prototype. At the time of the original website's creation, designing for mobile didn't exist so it was interesting to compare just how far web design has come. Today, understanding user experience fundamentals is important in any product development.</p>
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0624.jpg" width="1300" height="800" alt="Space Jam Movie Quiz mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0625.jpg" width="1300" height="800" alt="Space Jam Movie Quiz mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0626.jpg" width="1300" height="800" alt="Space Jam Movie Quiz mobile mockup">
+					<img src="./media/GIT413-2020Fall-Cg-ValenzuelaAngela-P0627.jpg" width="1300" height="800" alt="Space Jam Movie Quiz mobile mockup">
+					</section>
+			</article>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		</main>
+		
 	</body>
-	<footer>Copyright&copy;2020 Angela Valenzuela</footer>
+	<footer><p>Copyright&copy;2021 Angela Valenzuela</p></footer>
 </html>

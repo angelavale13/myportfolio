@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End CSS Reset */
+
+
+*{
+    font-family: archetype, serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 20px;
+  }
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a6ad99;
+    
+}
+
+/* keep this or breaks */
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+} 
+
+nav ul li{
+  padding: 10px;
+  
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 1.2em;
+  padding:10px;
+  font-family: rosella-solid, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: darkred;
+}
+
+li a:visited{
+  color: darkred;
+}
+
+li a:hover{
+  color:#292828;
+}
+
+li a:active{
+  color: darkred;
+}
+
+
+body{
+    width: 1440px;
+    margin: 0 auto;
+
+}
+
+
+p{
+    padding: 5px 10px;
+    line-height: 1.5em;
+}
+
+  h1{
+    font-family: rosella-deco, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2em;
+    color: darkred;
+  }
+
+  h2{
+      font-size:30px;
+      padding:20px;
+  }
+
+
+  h3{
+    font-size: 28px;
+    padding-top: 25px;
+    padding-left: 10px;
+    grid-row: 1;
+    line-height: 1.5em;
+    
+}
+
+  h4{
+      font-size: 18px;
+      padding: 0 15px;
+      grid-column: 1/2;
+  }
+
+  h6{
+      visibility: hidden;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap; /* added line */
+      border: 0;
+  }
+
+  #introSection{
+    display: grid;
+  }
+
+  #personalGreeting{
+    font-size: 24px;
+    grid-column: 2;
+    grid-row-end:span;
+    display: none; /* this needs to be hidden before user submits name */
+    padding-top: 25px;
+    padding-right: 10px;
+    justify-self: end;
+  }
+
+  .inlineSection{
+      display:inline;
+      padding: 15px;
+  }
+
+  
+
+  /* main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  } */
+  
+  form{
+      display:flex;
+      justify-content: flex-end;
+      padding: 10px;
+      grid-column: 2/3;
+  }
+
+  /* input{
+    display:flex;
+    justify-content: space-between;
+  } */
+
+  input[type=text] {
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    font-size: 1em;
+    margin: 0 15px 10px;
+    box-shadow: 3px 3px #4e443c;
+    height: fit-content;
+    box-shadow: 3px 3px #4e443c;
+    align-self: center;
+  }
+
+  input[type=text]:focus {
+    outline: none;
+  }
+
+  input[type=button]{
+      margin:10px;
+      font-size: 16px;
+      background-color: darkred;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 3px;
+      border: none;
+      padding: 10px;
+      height: fit-content;
+      align-self: center;
+  }
+
+  label{
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+  }
+
+
+  .featured{
+      text-align: center;
+      padding-top: 60px;
+      font-family: rosella-solid, sans-serif;
+      color: #a60505;
+      font-style: normal;
+      font-weight: 400;
+  }
+
+  .jcarousel-wrapper{
+      border: none;
+  }
+
+  .jcarousel-control-next {
+    right: -80px;
+}
+
+  .jcarousel-control-prev {
+    left: -80px;
+}
+  .jcarousel-control-prev, .jcarousel-control-next{
+    font-family: rosella-solid, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    width: 70px;
+    height: 40px;
+    border-radius: 3px;
+  }
+
+  .jcarousel-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.jcarousel-pagination a {
+    font-family: rosella-solid, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.5em;
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 15px;
+    opacity: .75;
+    width: 40px;
+    height: 20px;
+}
+
+  #accordion{
+    width: 100%;
+  }
+
+  .ui-accordion-header{
+    font-family: archetype, serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .ui-accordion-content{
+    font-family: archetype, serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+  }
+
+  .ui-state-hover{
+    background-color:#a60505;
+    color: #ffffff;
+}
+
+.ui-state-active{
+    border: 1px solid #363636;
+    background: #444444;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+#myBtn {
+  display: block; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: #a60505; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 3px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.footer{
+    text-align: center;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background-color:white;
+}
+
+/* Resume Section */
+#resume{
+
+  display: flex;
+  justify-content: center;
+}
+
+#column1{
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#column2{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#resume h2{
+  font-family: rosella-solid, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color:#a60505;
+  font-size: 26px;
+  padding: 0 10px;
+}
+
+
+#resume h3{
+  padding: 10px 10px 5px;
+  font-size:22px;
+}
+
+#resume h4{
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: #a60505;
+  font-size:16px;
+}
+
+span{
+  padding: 0 10px;
+}
+
+
+#basicsSection{
+  padding:15px 0;
+}
+
+#workSection{
+  padding:15px 0;
+}
+
+#eduSection{
+  padding:15px 0;
+}
+
+#skillsSection{
+  padding:15px 0;
+}
+
+#languageSection{
+  padding:15px 0;
+}
+
+#awardsSection{
+  padding:15px 0;
+}
+
+#activitiesSection{
+  padding:15px 0;
+}
